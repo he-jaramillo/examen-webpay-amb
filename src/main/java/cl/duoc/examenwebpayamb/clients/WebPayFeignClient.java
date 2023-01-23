@@ -11,7 +11,6 @@ import cl.duoc.examenwebpayamb.model.dto.WebPayTransactionInitResponse;
 @FeignClient(name = "svc-webpay", url = "https://webpay3gint.transbank.cl")
 public interface WebPayFeignClient {
     
-
     @PostMapping(path = "/rswebpaytransaction/api/webpay/v1.2/transactions",  produces = { "application/json" })
     public WebPayTransactionInitResponse initTransaction(
         @RequestHeader("Tbk-Api-Key-Id") String apiKeyId, 
