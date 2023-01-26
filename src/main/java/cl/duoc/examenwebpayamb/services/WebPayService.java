@@ -13,7 +13,7 @@ public class WebPayService {
     @Autowired
     WebPayFeignClient webPayFeignClient;
 
-    @Value("${webpay.headers.api-key-id}")
+    @Value("${webpay-headers.api-key-id}")
     private String webPayApiKeyId;
 
     @Value("${webpay-headers.api-key-secret}")
